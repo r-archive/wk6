@@ -7,11 +7,50 @@
     <title>쿠팡로그인</title>
 
     <!-- 외부css랑 js파일 connect -->
-    <link rel="style.css" href="style.css">
-    <link rel="style.css" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
     <script src="script/script.js"></script>
 </head>
-<body>
+
+    <h1><a href="#"><img src="image/logo.png" alt="cupang logo"></a></h1>
+
+    <main>
+    <form action="#" method="post" id="loginFrm">
+        <fieldset>
+            <legend class="skip">로그인양식</legend>
+
+            <ul>
+                <li>
+                    <span class="id_bg"><!-- 배경이미지(메일) --></span>
+                    <span><input type="text" name="user_id" placeholder="아이디(이메일)"></span>
+                </li>
+                <li class="error id_error">아이디(이메일)을 입력해주세요</li>
+                <li>
+                    <span class="pw_bg"><!-- 배경이미지(비밀번호) --></span>
+                    <span><input type ="password" name="user_pw" placeholder="비밀번호"></span>
+                    <span class="pw_show_hide" title="문자보이기"></span>
+                </li>
+                <li class="error pw_error">비밀번호를 입력해주세요</li>
+            </ul>
+
+            <div class="btm">
+                <p>
+                    <label>
+                        <input type="checkbox" name="login_y" id="login_y">
+                        <span>자동로그인</span>
+                        </input>
+                    </label>
+                </p>
+                <a href="#" class="idpw_search">아이디(이메일)/비밀번호 찾기</a>
+            </div>
+            <button type="submit" id="login_btn">로그인</button>
+        </fieldset>
+    </form>
+    <a href="#" class="join_link">회원가입</a>
+    </main>
     
+    <footer>
+        ©Coupang Corp. All rights reserved.
+    </footer>
 </body>
 </html>
